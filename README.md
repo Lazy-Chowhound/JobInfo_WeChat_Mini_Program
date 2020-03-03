@@ -1,0 +1,2 @@
+# JobInfo_WeChat_Mini_Program
+大四校内实习项目
