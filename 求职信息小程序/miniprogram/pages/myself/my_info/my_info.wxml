@@ -1,0 +1,36 @@
+<view class="background" style="background:url('../../../images/back.jpg')">
+  <view class="container">
+    <form bindsubmit="formSubmit">
+    
+    <view class="inputView">      
+      <text class="usrname" decode="{{true}}">用&nbsp;&nbsp;户&nbsp;&nbsp;&nbsp;名：</text>
+      <text class='info'>{{usrname}}</text>
+    </view>
+
+    <view class="inputView">      
+      <text class="name" decode="{{true}}">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</text>
+      <text class='info'>{{name}}</text>
+    </view>
+
+    <view class="inputView">      
+      <label class="birth">出生日期：</label>
+      <text class='info'>{{birth}}</text>
+    </view>
+
+    <view class="inputView">      
+      <text class="sex" decode="{{true}}">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</text>
+     <text class='info'>{{sex}}</text>
+    </view>
+
+    <view class="inputView">      
+      <text class="education" decode="{{true}}">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;历：</text>
+      <text class='info'>{{education}}</text>
+    </view>
+
+    <view class="inputView">      
+      <label class="city">所在城市：</label>
+      <text class='info'>{{city}}</text>
+    </view>
+    </form>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+<view class="container">
+    <form  class="form" bindsubmit='alterpassword'>
+    <view class="alterform">
+     
+      <view class="inputView">      
+        <label class="passwordtext">请输入原密码：</label>
+        <input name="oldpasswd" password='true' class="inputText" placeholder="原密码" placeholder-class='inputplaceholder'></input>
+      </view>
+
+      <view class="inputView">
+        <label class="passwordtext">请输入新密码：</label>
+        <input name="newpasswd" class="inputText" password="true" placeholder="新密码" placeholder-class='inputplaceholder'></input>
+      </view>
+
+      <view class="inputView">      
+        <label class="passwordtext">请确认新密码：</label>
+        <input name="againpasswd" class="inputText" password="true" placeholder="再次输入新密码" placeholder-class='inputplaceholder'></input>
+      </view>
+
+      <view class="registerBtnView">
+        <button class="registerBtn" size="mini" form-type='submit' hover-class='clicked'>更改密码</button>
+      </view>
+    </view>
+  </form>
+</view>

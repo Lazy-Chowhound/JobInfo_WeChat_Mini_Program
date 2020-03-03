@@ -1,0 +1,53 @@
+.background{
+  height: 1000px;
+  background-size: 100% 100%
+}
+
+.container{
+  margin-top: 100rpx;
+  height:500px;
+}
+
+.inputView { 
+  line-height: 37px;
+  margin-top: 35rpx;
+}
+
+.inputText {
+  flex: block;
+  float: right;
+  text-align: center;
+  margin-right: 0px;
+  margin-top: 9px;
+  font-size: 14px;
+  border-bottom: 1px solid black;
+}
+
+.inputplaceholder{
+  font-size: 14px;
+  text-align: center
+}
+
+.saveBtnView{
+  margin-top: 50rpx;
+  display:flex; 
+  justify-content:center;
+}
+
+.saveBtn {
+  width: 40%;
+  margin-top: 80rpx; 
+  border-radius: 50rpx;
+  background-color: #2E9AFE;
+  font-weight: bold;
+  color: white;  
+}
+
+.clicked{
+  width: 40%;
+  margin-top: 80rpx;
+  border-radius: 50rpx;
+  background-color: #C0C0C0;
+  font-weight: bold;
+  color: white;  
+}

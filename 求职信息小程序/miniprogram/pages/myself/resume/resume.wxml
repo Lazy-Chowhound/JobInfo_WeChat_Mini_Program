@@ -1,0 +1,35 @@
+<view class="background" style="background:url('../../../images/back.jpg')">
+  <view class="container">
+    <form bindsubmit="formSubmit">
+
+    <view class="inputView">      
+      <text class="name" decode="{{true}}">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</text>
+      <input name="name" class="inputText" placeholder="请输入姓名" placeholder-class='inputplaceholder' value="{{name==''?'':name}}"></input>
+    </view>
+
+    <view class="inputView">      
+      <label class="birth">出生日期：</label>
+      <input name="birth" class="inputText" placeholder="格式1998-08-06"                                                                                                        placeholder-class='inputplaceholder' value="{{birth==''?'':birth}}"></input>
+    </view>
+
+    <view class="inputView">      
+      <text class="sex" decode="{{true}}">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</text>
+      <input name="sex" class="inputText" placeholder="男/女"                                                                                                        placeholder-class='inputplaceholder' value="{{sex==''?'':sex}}"></input>
+    </view>
+
+    <view class="inputView">      
+      <text class="education" decode="{{true}}">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;历：</text>
+      <input name="education" class="inputText" placeholder="如本科/高中"                                                                                                        placeholder-class='inputplaceholder' value="{{education==''?'':education}}"></input>
+    </view>
+
+    <view class="inputView">      
+      <label class="city">所在城市：</label>
+      <input name="city" class="inputText" placeholder="如江苏南京"                                                                                                        placeholder-class='inputplaceholder' value="{{city==''?'':city}}"></input>
+    </view>
+
+    <view class="saveBtnView">
+      <button class="saveBtn" size="mini" form-type='submit' hover-class='clicked'>保存</button>
+    </view>
+    </form>
+  </view>
+</view>

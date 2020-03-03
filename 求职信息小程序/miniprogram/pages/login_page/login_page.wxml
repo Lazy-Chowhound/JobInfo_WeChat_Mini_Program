@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="login-picture">
+    <image class="login-img" src="/images/sea.png"></image>
+  </view>
+
+  <form bindsubmit='formSubmit'>
+    <view class="login-from">
+      <view class="inputView">
+        <image class="nameImage" src="/images/user_picture.png"></image>
+        <label class="loginLab">账号</label>
+        <input name="user" class="inputText" placeholder="请输入账号"></input>
+      </view>
+      <view class="line"></view>
+
+      <view class="inputView">
+        <image class="keyImage" src="/images/keyword_picture.png"></image>
+        <label class="loginLab">密码</label>
+        <input name="password" class="inputText" password="true" placeholder="请输入密码"></input>
+      </view>
+
+      <view class="loginBtnView">
+        <button class="loginBtn" size="mini" form-type='submit' hover-class='clicked'>登录</button>
+      </view>
+
+      <view>
+        <label class="ToRegisterLab" bindtap='ToRegister'>还未注册？点击这里</label>
+      </view>
+    </view>
+  </form>
+</view>

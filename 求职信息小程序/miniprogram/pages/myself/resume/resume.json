@@ -1,0 +1,11 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#3497e6",
+  "navigationBarTitleText": "创 建 简 历",
+  "navigationBarTextStyle": "black",
+  "nagavitionStyle": "custom",
+  "backgroundColor": "#33ccff",
+  "backgroundTextColor": "light",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 0
+}

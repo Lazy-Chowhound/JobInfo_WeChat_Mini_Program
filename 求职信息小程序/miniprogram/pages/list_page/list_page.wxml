@@ -1,0 +1,70 @@
+<view class="tabTit box">
+  <view class="flex1{{!tab[index]?' active':''}}" wx:for="{{tabTxt}}" wx:key="type" data-index="{{index}}" bindtap="filterTab">
+    <text>{{item}}</text>
+    <image src="/images/arrow.png"></image>
+  </view>
+</view>
+
+<view class="tabLayer" hidden="{{tab[0]}}">
+    <text class="{{type_id==item.id?'active':''}}" wx:for="{{typeList}}" wx:key="pp" wx:for-item="item" data-id="{            {item.id}}" data-index="0" data-txt="{{item.job}}" bindtap="filter">{{item.job}}</text>
+    <text class="{{type_id==0?'active':''}}" data-id="0" data-index="0" data-txt="类型" bindtap="filter">其他</text>
+</view>
+
+<view class="tabLayer" hidden="{{tab[1]}}">
+    <text class="{{education_id==0?'active':''}}" data-id="0" data-index="1" data-txt="学历" bindtap="filter">不限</text>
+    <text class="{{education_id==1?'active':''}}" data-id="1" data-index="1" data-txt="高中" bindtap="filter">高中         </text>
+    <text class="{{education_id==2?'active':''}}" data-id="2" data-index="1" data-txt="中专" bindtap="filter">中专         </text>
+     <text class="{{education_id==3?'active':''}}" data-id="3" data-index="1" data-txt="技校" bindtap="filter">技校         </text>
+    <text class="{{education_id==4?'active':''}}" data-id="4" data-index="1" data-txt="大专" bindtap="filter">大专         </text>
+    <text class="{{education_id_id==5?'active':''}}" data-id="5" data-index="1" data-txt="本科" bindtap="filter">本科及以上         </text>
+</view>
+
+<view class="tabLayer" hidden="{{tab[2]}}">
+    <text class="{{salary_id==0?'active':''}}" data-id="0" data-index="2" data-txt="薪资" bindtap="filter">不限</text>
+    <text class="{{salary_id==1?'active':''}}" data-id="1" data-index="2" data-txt="0-5000" bindtap="filter">0-5000</text>
+    <text class="{{salary_id==2?'active':''}}" data-id="2" data-index="2" data-txt="5000-10000" bindtap="filter">5000-10000</text>
+    <text class="{{salary_id==3?'active':''}}" data-id="3" data-index="2" data-txt="10000以上" bindtap="filter">10000以上</text>
+</view>
+
+<button class="kf_button" bindtap='tocitylist'>
+    <image class="kf_image" src="../../images/city.png"></image>
+</button>
+
+<view class='container'>
+  <block wx:for-items='{{jobs}}'>
+    <view class='card'>
+      <view class='usr_image'>
+        <image src='../../images/usr.png'></image>
+      </view>
+      <view class='info'>
+        <view>城市：
+          <text class='job_item'>{{item.city}}</text>
+        </view>
+        <view>职位：
+          <text class='job_item'>{{item.job_name}}</text>
+        </view>
+        <view>类型：
+          <text class='job_item'>{{item.position_type}}</text>
+        </view>
+        <view>工资：
+          <text class='job_item'>{{item.salary}}</text>
+        </view>
+         <view>学历：
+          <text class='job_item'>{{item.education}}</text>
+        </view>
+         <view>经验：
+          <text class='job_item'>{{item.experience}}</text>
+        </view>
+         <view>地址：
+          <text class='job_item'>{{item.address}}</text>
+        </view>
+        <view>公司：
+          <text class='job_item'>{{item.company}}</text>
+        </view>
+        <view>福利：
+          <text class='job_item'>{{item.job_welfare}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
